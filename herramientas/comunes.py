@@ -37,7 +37,7 @@ def cabecera(actual: str) -> str:
     for archivo, etiqueta in MENU:
         cur = ' aria-current="page"' if archivo == PADRE.get(actual, actual) else ""
         items.append(f'<li><a href="{archivo}"{cur}>{etiqueta}</a></li>')
-    items.append(f'<li><a class="ext" href="{REPO}" rel="noopener" title="Repositorio en GitHub: acceso para administradores del sitio y desarrolladores de código" aria-label="GitHub, acceso para administradores y desarrolladores de código">GitHub ↗</a></li>')
+    items.append(f'<li><a class="ext" href="{REPO}" rel="noopener" title="Repositorio en GitHub: acceso para administradores del sitio y desarrolladores de código" aria-label="GitHub, acceso para administradores y desarrolladores de código">GitHub ↗<span class="sub">Administradores y desarrolladores</span></a></li>')
     return (
         '<header class="cabecera">\n'
         '  <div class="contenedor">\n'

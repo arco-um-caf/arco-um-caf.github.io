@@ -354,3 +354,6 @@ table.datos td{border-top:1px solid var(--linea);padding:10px 12px;vertical-alig
 .videos .video-card .cuerpo{padding:24px 28px 28px}
 .videos .video-card h3{font-size:1.45rem}
 .pie-sitio .nota-gh{font-size:.8rem;color:#B9CBBE;margin:0 0 10px;line-height:1.4}
+.nav a.ext{display:flex;flex-direction:column;align-items:center;line-height:1.15;padding-top:5px;padding-bottom:5px}
+.nav a.ext .sub{font-size:.62rem;font-weight:500;color:var(--gris);white-space:nowrap;margin-top:2px}
+@media (max-width:980px){.nav a.ext{flex-direction:row;align-items:baseline;gap:8px}.nav a.ext .sub{font-size:.78rem}}
