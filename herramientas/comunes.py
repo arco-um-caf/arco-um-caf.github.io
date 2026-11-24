@@ -37,7 +37,7 @@ def cabecera(actual: str) -> str:
     for archivo, etiqueta in MENU:
         cur = ' aria-current="page"' if archivo == PADRE.get(actual, actual) else ""
         items.append(f'<li><a href="{archivo}"{cur}>{etiqueta}</a></li>')
-    items.append(f'<li><a class="ext" href="{REPO}" rel="noopener">GitHub ↗</a></li>')
+    items.append(f'<li><a class="ext" href="{REPO}" rel="noopener" title="Repositorio en GitHub: acceso para administradores del sitio y desarrolladores de código" aria-label="GitHub, acceso para administradores y desarrolladores de código">GitHub ↗</a></li>')
     return (
         '<header class="cabecera">\n'
         '  <div class="contenedor">\n'
@@ -80,6 +80,7 @@ PIE = f"""<footer class="pie-sitio">
       </div>
       <div>
         <h2>Código</h2>
+        <p class="nota-gh">Acceso para administradores del sitio y desarrolladores de código. Para conocer el proyecto no hace falta entrar a GitHub.</p>
         <ul>
           <li><a href="{REPO}" rel="noopener">Repositorio en GitHub</a></li>
           <li><a href="{REPO}#readme" rel="noopener">README</a></li>

@@ -215,8 +215,7 @@ table.datos td{border-top:1px solid var(--linea);padding:10px 12px;vertical-alig
 .seccion.oscura .muted,.seccion.oscura .lead{color:#C9DACD}
 
 /* videos */
-.videos{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-@media (max-width:900px){.videos{grid-template-columns:1fr}}
+.videos{display:grid;grid-template-columns:1fr;gap:40px;max-width:1040px;margin:0 auto}
 .video-card{background:#fff;border:1px solid var(--linea);border-radius:var(--radio);overflow:hidden;box-shadow:var(--sombra);display:flex;flex-direction:column}
 .video-card .video-marco{border-radius:0;box-shadow:none}
 .video-card .cuerpo{padding:22px 22px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
@@ -351,3 +350,7 @@ table.datos td{border-top:1px solid var(--linea);padding:10px 12px;vertical-alig
 .logos-inst{display:flex;align-items:center;justify-content:center;gap:22px;width:100%;max-width:300px}
 .logos-inst img{height:46px;width:auto}
 @media (max-width:900px){.hero-logos{order:-1;align-items:flex-start}.logos-inst{justify-content:flex-start;max-width:none}.logos-inst img{height:38px}}
+
+.videos .video-card .cuerpo{padding:24px 28px 28px}
+.videos .video-card h3{font-size:1.45rem}
+.pie-sitio .nota-gh{font-size:.8rem;color:#B9CBBE;margin:0 0 10px;line-height:1.4}
