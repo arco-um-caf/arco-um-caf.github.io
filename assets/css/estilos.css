@@ -345,3 +345,9 @@ table.datos td{border-top:1px solid var(--linea);padding:10px 12px;vertical-alig
 .pie-sitio a:hover{text-decoration:underline}
 .pie-sitio .base{border-top:1px solid rgba(255,255,255,.15);margin-top:26px;padding-top:16px;font-size:.8rem;color:#B9CBBE}
 .pie-sitio .logo-pie{height:38px;width:auto;margin-bottom:12px;filter:brightness(0) invert(1)}
+
+/* logos institucionales bajo el logo ARCO */
+.hero-logos{display:flex;flex-direction:column;align-items:flex-end;gap:18px}
+.logos-inst{display:flex;align-items:center;justify-content:center;gap:22px;width:100%;max-width:300px}
+.logos-inst img{height:46px;width:auto}
+@media (max-width:900px){.hero-logos{order:-1;align-items:flex-start}.logos-inst{justify-content:flex-start;max-width:none}.logos-inst img{height:38px}}
