@@ -4,4 +4,4 @@ Esta carpeta está reservada para el código del MVP operativo de ARCO: formular
 
 **Estado:** no hay código implementado. La demostración publicada en el portal (`mvp.html`) es conceptual y usa datos simulados.
 
-Antes de escribir código conviene cerrar los requisitos y el modelo de datos (ver `docs/tecnica/`). El portal documental vive en la raíz del repositorio y no debe mezclarse con esta carpeta.
+Antes de escribir código conviene cerrar los requisitos y el modelo de datos (ver `DOCUMENTACION_TECNICA.md`). El portal documental vive en la raíz del repositorio y no debe mezclarse con esta carpeta.

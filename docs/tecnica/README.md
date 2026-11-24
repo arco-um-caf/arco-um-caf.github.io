@@ -1,13 +1,7 @@
-# docs/tecnica/ · documentación técnica (pendiente)
+# docs/tecnica/ · documentación técnica del desarrollo funcional
 
-Carpeta reservada para la documentación técnica del MVP operativo:
+Carpeta reservada para la documentación técnica de la futura herramienta del piloto (requisitos validados, decisiones técnicas, instalación y uso).
 
-- requisitos funcionales y no funcionales;
-- modelo de datos (lote, edificio, material, retiro, recepción, comprobante, estado);
-- tratamiento de datos personales y consentimiento (Ley N.º 18.331);
-- decisiones técnicas y sus motivos;
-- instrucciones de instalación y uso, cuando exista código.
+**Estado:** sin contenido técnico propio todavía. La propuesta inicial de requisitos y modelo de datos está en [`DOCUMENTACION_TECNICA.md`](../../DOCUMENTACION_TECNICA.md), en la raíz del repositorio.
 
-**Estado:** sin contenido técnico todavía. Los documentos del proyecto (brief, proceso simplificado, presentación) están en `documentos/` y en la página Documentos del portal.
-
-Nota: el portal se publica desde la raíz del repositorio. Esta carpeta `docs/` no es la fuente de GitHub Pages.
+Nota: el sitio se publica desde la raíz del repositorio. Esta carpeta `docs/` no es la fuente de GitHub Pages.

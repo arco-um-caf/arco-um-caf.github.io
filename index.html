@@ -3,8 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Inicio · ARCO</title>
-<meta name="description" content="Portal documental de ARCO, Acelerador de Reciclaje Colaborativo en Origen. Versión inicial en evolución.">
+<title>ARCO · Acelerador de Reciclaje Colaborativo en Origen</title>
+<meta name="description" content="ARCO propone un piloto colaborativo de bajo costo para mejorar la separación en origen y la trazabilidad de materiales reciclables en edificios de Montevideo. Sitio web v2.0, entrega final 2026.">
+<meta property="og:title" content="ARCO · Acelerador de Reciclaje Colaborativo en Origen">
+<meta property="og:description" content="Un edificio, un material, ocho semanas: un piloto para separar mejor y demostrar cuánto material llega a valorizarse.">
+<meta property="og:image" content="https://arco-um-caf.github.io/assets/video/arco-presentacion-poster.jpg">
+<meta property="og:url" content="https://arco-um-caf.github.io/">
+<meta property="og:locale" content="es_UY">
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="preload" href="assets/fonts/montserrat-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/estilos.css">
@@ -13,79 +18,318 @@
 <a class="saltar" href="#contenido">Saltar al contenido</a>
 <header class="cabecera">
   <div class="contenedor">
-    <a class="marca" href="index.html"><img src="assets/img/logo-arco.png" alt="ARCO" width="58" height="42"><span>Acelerador de Reciclaje Colaborativo en Origen</span></a>
+    <a class="marca" href="index.html"><img src="assets/img/logo-arco.png" alt="ARCO, inicio" width="58" height="42"><span>Acelerador de Reciclaje Colaborativo en Origen</span></a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-principal">Menú</button>
-    <nav class="nav" id="menu-principal" aria-label="Secciones del portal"><ul><li><a href="index.html" aria-current="page">Inicio</a></li><li><a href="recorrido.html">Recorrido</a></li><li><a href="investigacion.html">Investigación</a></li><li><a href="propuesta.html">Propuesta</a></li><li><a href="mvp.html">MVP</a></li><li><a href="galeria.html">Galería</a></li><li><a href="documentos.html">Documentos</a></li><li><a href="equipo.html">Equipo</a></li><li><a href="desarrollo.html">Próximos desarrollos</a></li></ul></nav>
+    <nav class="nav" id="menu-principal" aria-label="Secciones del sitio"><ul><li><a href="index.html" aria-current="page">Inicio</a></li><li><a href="propuesta.html">El proyecto</a></li><li><a href="investigacion.html">Investigación</a></li><li><a href="mvp.html">MVP</a></li><li><a href="desarrollo.html">Evolución</a></li><li><a href="documentos.html">Documentos</a></li><li><a href="equipo.html">Equipo</a></li><li><a href="recorrido.html">Historia</a></li><li><a class="ext" href="https://github.com/arco-um-caf/arco-um-caf.github.io" rel="noopener">GitHub ↗</a></li></ul></nav>
   </div>
 </header>
 <main id="contenido">
 
-<section class="contenedor hero">
-  <div>
-    <img class="logo-grande" src="assets/img/logo-arco.png" alt="Logo de ARCO" width="600" height="438">
-    <span class="estado">Versión inicial · En evolución</span>
-    <h1 style="margin-top:14px">Acelerador de Reciclaje Colaborativo en Origen</h1>
-    <p class="lead">ARCO propone un servicio de bajo costo para mejorar la separación de residuos reciclables en edificios de Montevideo y documentar qué ocurre con el material después de que sale del edificio.</p>
-    <p class="muted">Proyecto de equipo del Diplomado en Gobernabilidad e Innovación Pública, CAF – Universidad de Montevideo, 2026. Este portal reúne su recorrido, su investigación y sus materiales.</p>
-    <div class="botones">
-      <a class="btn primario" href="recorrido.html">Conocer el recorrido</a>
-      <a class="btn lima" href="mvp.html">Ver cómo funcionaría el MVP</a>
-      <a class="btn secundario" href="documentos.html">Explorar documentos</a>
-    </div>
-  </div>
-  <div>
-    <div class="video-marco">
-      <video controls preload="none" playsinline poster="assets/video/arco-centenario-poster.jpg" aria-describedby="pie-centenario">
-        <source src="assets/video/arco-centenario.mp4" type="video/mp4">
-        Tu navegador no puede reproducir este video. <a href="assets/video/arco-centenario.mp4">Descargar el video (MP4)</a>.
-      </video>
-    </div>
-    <p class="pie" id="pie-centenario"><span class="etiqueta concepto">Pieza de comunicación · imágenes conceptuales</span><br>
-    Video de presentación (10 s, con locución). Comienza con una imagen en blanco y negro del Estadio Centenario y recorre escenas recreadas de un hogar, un edificio y un retiro. Muestra elementos (aplicación, tablet, estaciones con marca) que <strong>no forman parte</strong> del piloto propuesto. <a href="#transcripcion">Ver transcripción</a>.</p>
-  </div>
-</section>
-
-<section class="seccion blanca">
+<!-- 1 · Portada -->
+<section class="hero2">
   <div class="contenedor">
-    <h2>Qué vas a encontrar</h2>
-    <p class="muted">El portal distingue cuatro cosas distintas. Ninguna de ellas es una herramienta en funcionamiento.</p>
-    <div class="grilla g4">
-      <div class="tarjeta lima"><span class="kicker">Este sitio</span><h3>Portal documental</h3><p class="small">Versión inicial que reúne el proceso, la investigación, los documentos y el equipo.</p></div>
-      <div class="tarjeta"><span class="kicker">Ya existen</span><h3>Piezas educativas y de comunicación</h3><p class="small">Video del Centenario, adhesivos, folleto, tarjetas del equipo y un juego educativo (no incluido en este paquete).</p></div>
-      <div class="tarjeta"><span class="kicker">Datos simulados</span><h3>Demostración conceptual del MVP</h3><p class="small">Video que muestra cómo podría funcionar el registro de lotes. No es evidencia de un piloto.</p></div>
-      <div class="tarjeta"><span class="kicker">Pendiente</span><h3>Herramienta operativa</h3><p class="small">Aún no implementada. Su desarrollo está descripto en <a href="desarrollo.html">Próximos desarrollos</a>.</p></div>
+    <div>
+      <div class="sello"><span class="estado">Piloto propuesto · Entrega final 2026</span><span class="version">Versión 2.0 del sitio web · Entrega final · Noviembre 2026</span></div>
+      <h1>Separar mejor en el edificio y <em>demostrar</em> cuánto material llega a valorizarse.</h1>
+      <p class="lead">ARCO es un proyecto de innovación pública que propone un servicio piloto colaborativo y de bajo costo para edificios de Montevideo. Coordina a residentes, administración, recolector y gestor, y registra con evidencia el recorrido del material desde la separación hasta su valorización.</p>
+      <div class="botones">
+        <a class="btn primario" href="#videos">Ver los videos</a>
+        <a class="btn lima" href="mvp.html">Explorar el MVP</a>
+        <a class="btn secundario" href="documentos/2026-11-23_brief-arco-definitivo.pdf">Brief definitivo (PDF)</a>
+      </div>
+      <nav class="ancla-nav" aria-label="En esta página">
+        <a href="#problema">Problema</a><a href="#piloto">Piloto</a><a href="#evaluacion">Evaluación</a><a href="#etapas">ARCO 1.0 y 2.0</a><a href="#implementacion">Del prototipo a la implementación</a><a href="#abierto">Desarrollo abierto</a><a href="#equipo">Equipo</a>
+      </nav>
+    </div>
+    <img class="logo-hero" src="assets/img/logo-arco.png" alt="Logo de ARCO" width="600" height="438">
+  </div>
+</section>
+
+<!-- 2 · Videos -->
+<section class="seccion" id="videos">
+  <div class="contenedor">
+    <div class="titulo-seccion">
+      <span class="kicker">Videos de la entrega final</span>
+      <h2>Conocé ARCO en dos videos</h2>
+      <p class="muted">El primero presenta el proyecto; el segundo muestra cómo funcionaría el piloto. Ninguno se reproduce solo y no se descargan hasta que los iniciás.</p>
+    </div>
+    <div class="videos">
+      <article class="video-card" aria-labelledby="t-presentacion">
+        <div class="video-marco">
+          <video id="v-presentacion" controls preload="none" playsinline poster="assets/video/arco-presentacion-poster.jpg" aria-describedby="d-presentacion">
+            <source src="assets/video/arco-presentacion.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video. <a href="assets/video/arco-presentacion.mp4">Descargar el video (MP4)</a>.
+          </video>
+        </div>
+        <div class="cuerpo">
+          <div class="video-meta"><span class="dur">5:00 min</span><span class="etiqueta real">Video institucional</span><span class="etiqueta pendiente">Subtitulado en español</span></div>
+          <h3 id="t-presentacion">ARCO | Presentación del proyecto</h3>
+          <p id="d-presentacion">Conocé el problema que motiva ARCO, su propuesta de valor, el enfoque colaborativo y la visión del equipo para fortalecer la separación en origen y la valorización de materiales reciclables.</p>
+          <p class="small">Algunas escenas son recreaciones e imágenes conceptuales generadas con IA (por ejemplo, la guía en el celular); no muestran un servicio en funcionamiento.</p>
+          <div class="botones">
+            <a class="btn primario chico" href="#v-presentacion" data-accion="reproducir" data-video="v-presentacion">▶ Ver presentación</a>
+            <a class="btn secundario chico" href="assets/video/arco-presentacion.mp4" download>Descargar video MP4 · 24 MB</a>
+            <button class="btn secundario chico" type="button" data-accion="pantalla" data-video="v-presentacion">Pantalla completa</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="video-card" aria-labelledby="t-demo">
+        <div class="video-marco">
+          <video id="v-demo" controls preload="none" playsinline poster="assets/video/arco-demo-mvp-poster.jpg" aria-describedby="d-demo">
+            <source src="assets/video/arco-demo-mvp.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video. <a href="assets/video/arco-demo-mvp.mp4">Descargar el video (MP4)</a>.
+          </video>
+        </div>
+        <div class="cuerpo">
+          <div class="video-meta"><span class="dur">3:49 min</span><span class="etiqueta simulado">Prototipo · Datos simulados</span><span class="etiqueta pendiente">No es un sistema en producción</span></div>
+          <h3 id="t-demo">ARCO 1.0 | Demostración del MVP</h3>
+          <p id="d-demo">Explorá cómo funcionaría el piloto de ARCO mediante una demostración de sus interfaces, actores, registros operativos, mecanismos de trazabilidad e indicadores de evaluación: el recorrido del material desde la separación en origen hasta la acreditación de su valorización.</p>
+          <p class="small">Incluye al final una breve presentación de ARCO 2.0 como posible evolución, diferenciada del alcance del piloto inicial.</p>
+          <div class="botones">
+            <a class="btn lima chico" href="mvp.html">Explorar el MVP</a>
+            <a class="btn secundario chico" href="assets/video/arco-demo-mvp.mp4" download>Descargar video MP4 · 21 MB</a>
+            <button class="btn secundario chico" type="button" data-accion="pantalla" data-video="v-demo">Pantalla completa</button>
+          </div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="seccion">
-  <div class="contenedor grilla g3">
-    <a class="tarjeta acceso" href="investigacion.html"><div><span class="kicker">Investigación</span><h3>Encuesta y devoluciones</h3><p class="small">111 respuestas a una encuesta exploratoria y 31 devoluciones al pitch, con sus límites.</p></div><span class="ir">Ver investigación →</span></a>
-    <a class="tarjeta acceso" href="propuesta.html"><div><span class="kicker">Propuesta</span><h3>Un edificio, un material, un gestor</h3><p class="small">El servicio, sus actores y el recorrido del material, con lo que todavía falta confirmar.</p></div><span class="ir">Ver la propuesta →</span></a>
-    <a class="tarjeta acceso" href="equipo.html"><div><span class="kicker">Equipo</span><h3>Siete integrantes</h3><p class="small">Quiénes llevaron adelante el proyecto durante el diplomado.</p></div><span class="ir">Conocer al equipo →</span></a>
+<!-- 3 · Problema y propuesta -->
+<section class="seccion blanca" id="problema">
+  <div class="contenedor">
+    <div class="titulo-seccion">
+      <span class="kicker">El problema</span>
+      <h2>El reciclaje se pierde en el camino</h2>
+      <p class="lead">Separar en casa no alcanza si el material llega contaminado, se mezcla en el trayecto o nadie puede comprobar qué pasó con él. Hoy la cadena es lineal:</p>
+      <ul class="cadena" aria-label="Cadena actual">
+        <li>Separación deficiente</li><li>Recolección fija</li><li>Reciclaje mínimo</li><li class="mal">Vertido mayoritario a disposición final</li>
+      </ul>
+    </div>
+    <div class="cifras">
+      <div class="cifra"><b>51 %</b><span>de los montevideanos está insatisfecho con la recolección de residuos.</span><small>Equipos Consultores, 2026</small></div>
+      <div class="cifra"><b>≤ 43 %</b><span>del material recibido como reciclable en las cuatro plantas de clasificación llega a venderse a la industria.</span><small>Informes oficiales de gestión ambiental</small></div>
+      <div class="cifra"><b>23,4 %</b><span>de 111 hogares encuestados dice separar siempre; el 45,9 % dejó de separar alguna vez.</span><small>Encuesta propia de ARCO, exploratoria</small></div>
+      <div class="cifra"><b>77 ha</b><span>ocupa el Sitio de Disposición Final Felipe Cardoso, que recibe unas 350.000 t de residuos por año.</span><small>Brief ARCO, con datos de la IM</small></div>
+    </div>
+    <div class="grilla g3" style="margin-top:34px">
+      <div class="tarjeta lima"><span class="kicker">Qué es ARCO</span><h3>Un proyecto puente</h3><p class="small">Un servicio piloto para comunidades edilicias que busca aumentar la separación en origen, la calidad del material y la trazabilidad de su recorrido. Complementa al programa Hogares Sustentables de la IM; no lo sustituye.</p></div>
+      <div class="tarjeta"><span class="kicker">Propuesta de valor</span><h3>Trazabilidad como confianza</h3><p class="small">El edificio funciona como unidad de microgobernanza, cada actor tiene un rol acordado y cada etapa se registra con su evidencia. Así el vecino puede saber qué ocurrió con lo que separó.</p></div>
+      <div class="tarjeta"><span class="kicker">Hacia dónde apunta</span><h3>De lineal a circular</h3><p class="small">Reducir, reutilizar, separar, valorizar y disponer solo el rechazo no valorizable. El pesaje es el puente entre el aprendizaje local y la política pública.</p></div>
+    </div>
+    <p style="margin-top:22px"><a href="propuesta.html">Ver el proyecto completo: fundamentación, actores, cronograma y presupuesto →</a></p>
   </div>
 </section>
 
-<section class="seccion blanca" id="transcripcion">
+<!-- 4 · Piloto -->
+<section class="seccion" id="piloto">
   <div class="contenedor">
-    <h2>Transcripción del video de presentación</h2>
-    <p class="small muted">Transcripción automática, pendiente de revisión por el equipo. No se pudo confirmar la primera frase.</p>
-    <p>[Primera frase a confirmar.] «Con el proyecto ARCO, el futuro ya llegó. Separar tus residuos es más fácil. Una ciudad más limpia depende de todos. Lo que separás hoy nos une mañana.»</p>
-    <p class="aviso discreto">La pieza tiene un tono promocional. Frases como «el futuro ya llegó» corresponden a la comunicación del proyecto y no describen un servicio en funcionamiento.</p>
+    <div class="titulo-seccion">
+      <span class="kicker">ARCO 1.0 · Piloto propuesto</span>
+      <h2>Cómo funcionaría el piloto</h2>
+      <p class="muted">Un servicio manual y verificable, acotado para aprender antes de escalar. El piloto no se ha ejecutado.</p>
+    </div>
+    <div class="piloto-datos">
+      <div><b>1</b><span>edificio típico de Montevideo, con al menos 20 apartamentos (Pocitos)</span></div>
+      <div><b>1 (máx. 2)</b><span>materiales reciclables, por ejemplo plástico o cartón</span></div>
+      <div><b>8 semanas</b><span>2 de línea de base y kick-off, 6 de operación, y cierre en la semana 9</span></div>
+      <div><b>USD 890–1.330</b><span>presupuesto estimado del prototipo, con personal operativo ARCO</span></div>
+    </div>
+    <h3>Cinco estados, cada uno con su evidencia</h3>
+    <p class="small muted">Cada estado confirma algo distinto y no prueba el siguiente.</p>
+    <ol class="estados">
+      <li><b>Depositado</b><span class="ev">Material separado en contenedores, con sticker por apartamento.</span><span class="no">No confirma que se recicle.</span></li>
+      <li><b>Retirado</b><span class="ev">Pesaje y constancia de retiro.</span><span class="no">No confirma que la planta lo acepte.</span></li>
+      <li><b>Recibido</b><span class="ev">Comprobante de ingreso a planta.</span><span class="no">No confirma que se valorice.</span></li>
+      <li><b>Clasificado</b><span class="ev">Registro de aceptado y rechazado.</span><span class="no">No confirma su destino final.</span></li>
+      <li><b>Valorizado</b><span class="ev">Venta, destino o proceso.</span><span class="no">No mide el impacto sin evaluación técnica.</span></li>
+    </ol>
+    <p style="margin-top:22px"><a href="propuesta.html#actores">Ver los ocho actores y sus roles →</a></p>
+  </div>
+</section>
+
+<!-- 5 · Evaluación -->
+<section class="seccion blanca" id="evaluacion">
+  <div class="contenedor grilla g2" style="align-items:start">
+    <div>
+      <span class="kicker" style="font-size:.78rem;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--lima-txt)">Evaluación</span>
+      <h2>Cómo se evaluaría</h2>
+      <p>El objetivo es generar evidencia para decidir si el servicio se ajusta, se digitaliza o se escala. Al cierre, en la semana 9, se decide <strong>seguir, ajustar o replantear</strong>.</p>
+      <ul>
+        <li>Al menos 10 entrevistas y una observación en el edificio antes del piloto.</li>
+        <li>Acuerdo con el edificio y un gestor sobre material, estándar, frecuencia, roles, evidencias y contingencias.</li>
+        <li>Registro del 100 % de los retiros programados, cantidades, incidentes y comprobantes.</li>
+        <li>Evaluación de participación, calidad, saturación, recepción confirmada y costo total.</li>
+      </ul>
+    </div>
+    <div>
+      <div class="tarjeta lima"><span class="kicker">Meta del piloto</span><h3>+20 % de material valorizado</h3><p class="small">Tasa de material reciclable valorizado desde el edificio (% sobre kg), frente a una línea de base que ARCO relevaría en las primeras semanas. La línea de base todavía no está determinada.</p></div>
+      <div class="tarjeta" style="margin-top:16px"><span class="kicker">Horizonte de ciudad · desde 2028</span><h3>15 % de reciclables a escala urbana</h3><p class="small">Objetivo mínimo de referencia, frente a un valor actual estimado de alrededor del 5 %. Es una aspiración de largo plazo, no un resultado esperable del piloto.</p></div>
+      <p class="small muted" style="margin-top:12px">Los indicadores son metas propuestas, no resultados alcanzados.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · ARCO 1.0 y 2.0 -->
+<section class="seccion" id="etapas">
+  <div class="contenedor">
+    <div class="titulo-seccion">
+      <span class="kicker">Alcance y evolución</span>
+      <h2>ARCO 1.0 y ARCO 2.0</h2>
+      <p class="muted">El MVP y el piloto de un edificio son el centro del proyecto. Las herramientas tecnológicas se evaluarían después, solo si la evidencia y la viabilidad lo justifican.</p>
+    </div>
+    <div class="etapas">
+      <div class="etapa v1">
+        <span class="etiqueta real">Alcance actual · MVP y piloto propuesto</span>
+        <h3 style="margin-top:12px">ARCO 1.0</h3>
+        <ul>
+          <li><b>Alcance:</b> un edificio y uno o dos materiales durante ocho semanas.</li>
+          <li><b>Actores:</b> residentes, referente, administración, personal del edificio, recolector, gestor o planta, IM y equipo ARCO.</li>
+          <li><b>Operación:</b> separación en contenedores comunes con sticker por apartamento; visita del operador dos veces por semana para pesar, controlar calidad y registrar.</li>
+          <li><b>Trazabilidad:</b> cinco estados con evidencia, de depositado a valorizado.</li>
+          <li><b>Recursos:</b> balanza, contenedores, stickers, planillas, kits informativos y logística de retiro.</li>
+          <li><b>Evaluación:</b> línea de base, indicadores semanales e informe final al edificio.</li>
+        </ul>
+        <p style="margin:14px 0 0"><a href="mvp.html">Ver el MVP →</a></p>
+      </div>
+      <div class="etapa v2">
+        <span class="etiqueta concepto">Proyección conceptual · sujeta a validación</span>
+        <h3 style="margin-top:12px">ARCO 2.0</h3>
+        <p class="small">En el cronograma del brief, ARCO 2.0 es la etapa siguiente al piloto: cinco edificios más para probar la replicabilidad y, al cierre, evaluar herramientas de potenciación. Podría incluir:</p>
+        <ul>
+          <li>aplicación móvil, recordatorios o incentivos;</li>
+          <li>estaciones modulares con integraciones tecnológicas;</li>
+          <li>sensores y pesaje digitalizado;</li>
+          <li>automatización de registros y datos centralizados;</li>
+          <li>escalabilidad territorial a 5, 25 y 100 edificios.</li>
+        </ul>
+        <p class="small muted" style="margin-top:10px">Nada de esto está desarrollado, financiado ni validado.</p>
+        <p style="margin:10px 0 0"><a href="desarrollo.html#etapas">Ver la evolución prevista →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · Del prototipo a la implementación -->
+<section class="seccion oscura" id="implementacion">
+  <div class="contenedor">
+    <div class="titulo-seccion">
+      <span class="kicker">Del prototipo a la implementación</span>
+      <h2>El trabajo no termina con la entrega académica</h2>
+      <p class="lead">El MVP permite ver de antemano los procesos, las interfaces y los mecanismos de trazabilidad que requeriría una implementación. Esas representaciones son insumos para construir y probar componentes funcionales antes de un piloto real.</p>
+    </div>
+    <ol class="proceso" aria-label="Etapas del proceso">
+      <li class="hecho"><small>Realizado</small>Diseño conceptual</li>
+      <li class="hecho"><small>Realizado</small>MVP demostrativo</li>
+      <li class="pend"><small>Pendiente</small>Desarrollo funcional</li>
+      <li class="pend"><small>Pendiente</small>Pruebas y validación</li>
+      <li class="pend"><small>Pendiente</small>Piloto</li>
+      <li class="pend"><small>Pendiente</small>Evaluación</li>
+      <li class="pend"><small>Pendiente</small>Escalabilidad</li>
+    </ol>
+    <div class="leyenda"><span class="l-hecho">Realizado</span><span class="l-pend">Pendiente</span></div>
+    <p style="margin-top:22px"><a href="desarrollo.html" style="color:#fff;font-weight:700">Leer el enfoque completo →</a></p>
+  </div>
+</section>
+
+<!-- 8 · Desarrollo abierto -->
+<section class="seccion blanca" id="abierto">
+  <div class="contenedor">
+    <div class="titulo-seccion">
+      <span class="kicker">Desarrollo abierto y colaboración</span>
+      <h2>El repositorio está abierto para explorar y aportar</h2>
+      <p class="muted">Hoy el repositorio contiene este sitio estático (HTML, CSS y JavaScript), la documentación y los videos. No incluye un backend ni una aplicación en funcionamiento.</p>
+    </div>
+    <div class="botones-gh">
+      <a class="btn-gh prim" href="https://github.com/arco-um-caf/arco-um-caf.github.io" rel="noopener"><b>Explorar código fuente</b><span>Repositorio en GitHub</span></a>
+      <a class="btn-gh" href="https://github.com/arco-um-caf/arco-um-caf.github.io#readme" rel="noopener"><b>Consultar README técnico</b><span>Puerta de entrada al proyecto</span></a>
+      <a class="btn-gh" href="documentos.html"><b>Ver documentación del proyecto</b><span>Brief definitivo y antecedentes</span></a>
+      <a class="btn-gh" href="https://github.com/arco-um-caf/arco-um-caf.github.io/issues" rel="noopener"><b>Proponer mejoras</b><span>Issues de GitHub (requiere cuenta)</span></a>
+      <a class="btn-gh" href="https://github.com/arco-um-caf/arco-um-caf.github.io/blob/main/ROADMAP.md" rel="noopener"><b>Explorar oportunidades de desarrollo</b><span>Hoja de ruta técnica</span></a>
+    </div>
+    <p><a href="desarrollo.html#abierto">Qué es cada cosa: sitio, repositorio, prototipo y aplicación →</a></p>
+  </div>
+</section>
+
+<!-- 9 · Equipo -->
+<section class="seccion" id="equipo">
+  <div class="contenedor">
+    <div class="titulo-seccion">
+      <span class="kicker">Equipo</span>
+      <h2>Siete integrantes, siete disciplinas</h2>
+      <p class="muted">Diplomado en Gobernabilidad e Innovación Pública, CAF – Universidad de Montevideo, 2026.</p>
+    </div>
+    <div class="equipo-mini">
+      <div><img src="assets/img/equipo/maria-arbilla.jpg" alt="" width="88" height="88" loading="lazy"><b>María Arbilla</b><span>Comunicación</span></div>
+      <div><img src="assets/img/equipo/sebastian-arbifeuille.jpg" alt="" width="88" height="88" loading="lazy"><b>Sebastián Arbifeuille</b><span>Contador · Gestión de procesos</span></div>
+      <div><img src="assets/img/equipo/sebastian-arballo.jpg" alt="" width="88" height="88" loading="lazy"><b>Sebastián Arballo</b><span>Comunicación corporativa</span></div>
+      <div><img src="assets/img/equipo/yuri-martin-biardo.jpg" alt="" width="88" height="88" loading="lazy"><b>Yuri Martín Biardo</b><span>Tecnólogo Industrial · Compras y mantenimiento</span></div>
+      <div><img src="assets/img/equipo/andrea-catala.jpg" alt="" width="88" height="88" loading="lazy"><b>María Andrea Catalá Pezzatti</b><span>Derecho · DD. HH. y políticas sociales</span></div>
+      <div><img src="assets/img/equipo/sara-ilha.jpg" alt="" width="88" height="88" loading="lazy"><b>Sara Ilha</b><span>Derecho · Asesoría jurídica</span></div>
+      <div><img src="assets/img/equipo/pablo-vieytes.jpg" alt="" width="88" height="88" loading="lazy"><b>Pablo Vieytes</b><span>Arquitectura sostenible</span></div>
+    </div>
+    <p style="margin-top:24px"><a href="equipo.html">Ver perfiles completos →</a></p>
+  </div>
+</section>
+
+<!-- 10 · QR -->
+<section class="seccion blanca" id="qr">
+  <div class="contenedor qr-bloque">
+    <img src="assets/qr/arco-qr-sitio-directo.png" alt="Código QR que dirige a arco-um-caf.github.io" width="170" height="170" loading="lazy">
+    <div>
+      <h2>Compartí ARCO</h2>
+      <p class="muted">Este código lleva directamente a <strong>arco-um-caf.github.io</strong>, sin servicios intermedios. También está disponible el QR distribuido en la entrega.</p>
+      <div class="botones">
+        <a class="btn primario chico" href="assets/qr/arco-qr-sitio-directo.png" download>Descargar QR directo (PNG)</a>
+        <a class="btn secundario chico" href="assets/qr/arco-qr-sitio-directo.svg" download>QR directo (SVG, para imprenta)</a>
+        <a class="btn secundario chico" href="assets/qr/arco-qr-entrega.jpg" download>QR de la entrega (JPG)</a>
+      </div>
+    </div>
   </div>
 </section>
 
 </main>
 <footer class="pie-sitio">
-  <div class="contenedor fila">
-    <div>
-      <p><span class="estado">Versión inicial · En evolución</span></p>
-      <p>Este repositorio reúne el proceso y los materiales de ARCO y queda preparado para incorporar progresivamente el código, las pruebas y la documentación técnica del MVP. El video muestra una demostración conceptual; la herramienta operativa aún no está implementada.</p>
+  <div class="contenedor">
+    <div class="columnas">
+      <div>
+        <img class="logo-pie" src="assets/img/logo-arco.png" alt="ARCO" width="58" height="42" loading="lazy">
+        <p><strong>ARCO · Acelerador de Reciclaje Colaborativo en Origen.</strong> Proyecto de equipo del Diplomado en Gobernabilidad e Innovación Pública, CAF – Universidad de Montevideo, 2026.</p>
+        <p>El piloto es una propuesta: no se ha ejecutado. La demostración del MVP usa datos simulados.</p>
+      </div>
+      <div>
+        <h2>Sitio</h2>
+        <ul>
+          <li><a href="https://arco-um-caf.github.io/">arco-um-caf.github.io</a></li>
+          <li><a href="propuesta.html">El proyecto</a></li>
+          <li><a href="mvp.html">MVP</a></li>
+          <li><a href="desarrollo.html">Evolución</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Recursos</h2>
+        <ul>
+          <li><a href="index.html#videos">Videos</a></li>
+          <li><a href="assets/video/arco-presentacion.mp4" download>Presentación (MP4)</a></li>
+          <li><a href="assets/video/arco-demo-mvp.mp4" download>Demo del MVP (MP4)</a></li>
+          <li><a href="documentos/2026-11-23_brief-arco-definitivo.pdf">Brief definitivo (PDF)</a></li>
+          <li><a href="documentos.html">Documentación</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Código</h2>
+        <ul>
+          <li><a href="https://github.com/arco-um-caf/arco-um-caf.github.io" rel="noopener">Repositorio en GitHub</a></li>
+          <li><a href="https://github.com/arco-um-caf/arco-um-caf.github.io#readme" rel="noopener">README</a></li>
+          <li><a href="https://github.com/arco-um-caf/arco-um-caf.github.io/releases" rel="noopener">Versiones publicadas</a></li>
+          <li><a href="https://github.com/arco-um-caf/arco-um-caf.github.io/issues" rel="noopener">Proponer mejoras</a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <p><strong>ARCO</strong> es un proyecto de equipo realizado en el marco del Diplomado en Gobernabilidad e Innovación Pública, CAF – Universidad de Montevideo, 2026.</p>
-      <p>Las cifras de la encuesta son exploratorias. Las piezas conceptuales y la demostración con datos simulados se identifican como tales en cada sección.</p>
-    </div>
+    <p class="base">Versión 2.0 del sitio web · Entrega final · Noviembre 2026. La mención de CAF y de la Universidad de Montevideo indica el contexto académico del proyecto y no implica un aval institucional adicional. Contenidos sin licencia de reutilización asignada.</p>
   </div>
 </footer>
 <script src="assets/js/sitio.js"></script>

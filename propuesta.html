@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>La propuesta ARCO · ARCO</title>
-<meta name="description" content="Servicio, actores y recorrido del material en la propuesta ARCO.">
+<title>El proyecto · ARCO</title>
+<meta name="description" content="Problema, fundamentación, piloto ARCO 1.0, actores, trazabilidad, indicadores, cronograma y presupuesto, según el brief definitivo de noviembre de 2026.">
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="preload" href="assets/fonts/montserrat-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/estilos.css">
@@ -13,69 +13,236 @@
 <a class="saltar" href="#contenido">Saltar al contenido</a>
 <header class="cabecera">
   <div class="contenedor">
-    <a class="marca" href="index.html"><img src="assets/img/logo-arco.png" alt="ARCO" width="58" height="42"><span>Acelerador de Reciclaje Colaborativo en Origen</span></a>
+    <a class="marca" href="index.html"><img src="assets/img/logo-arco.png" alt="ARCO, inicio" width="58" height="42"><span>Acelerador de Reciclaje Colaborativo en Origen</span></a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-principal">Menú</button>
-    <nav class="nav" id="menu-principal" aria-label="Secciones del portal"><ul><li><a href="index.html">Inicio</a></li><li><a href="recorrido.html">Recorrido</a></li><li><a href="investigacion.html">Investigación</a></li><li><a href="propuesta.html" aria-current="page">Propuesta</a></li><li><a href="mvp.html">MVP</a></li><li><a href="galeria.html">Galería</a></li><li><a href="documentos.html">Documentos</a></li><li><a href="equipo.html">Equipo</a></li><li><a href="desarrollo.html">Próximos desarrollos</a></li></ul></nav>
+    <nav class="nav" id="menu-principal" aria-label="Secciones del sitio"><ul><li><a href="index.html">Inicio</a></li><li><a href="propuesta.html" aria-current="page">El proyecto</a></li><li><a href="investigacion.html">Investigación</a></li><li><a href="mvp.html">MVP</a></li><li><a href="desarrollo.html">Evolución</a></li><li><a href="documentos.html">Documentos</a></li><li><a href="equipo.html">Equipo</a></li><li><a href="recorrido.html">Historia</a></li><li><a class="ext" href="https://github.com/arco-um-caf/arco-um-caf.github.io" rel="noopener">GitHub ↗</a></li></ul></nav>
   </div>
 </header>
 <main id="contenido">
-<section class="contenedor cabeza-pagina"><h1>La propuesta ARCO</h1><p class="lead">Un servicio colaborativo para separar mejor en el edificio y documentar qué ocurre con el material después. Es una propuesta: el piloto no se ejecutó.</p></section>
-<section class="contenedor" style="padding-bottom:40px">
- <div class="grilla g4">
-  <div class="tarjeta lima" style="text-align:center"><div style="font-size:2.2rem;font-weight:700;color:var(--verde)">1</div><p class="small">edificio</p></div>
-  <div class="tarjeta lima" style="text-align:center"><div style="font-size:2.2rem;font-weight:700;color:var(--verde)">1</div><p class="small">material</p></div>
-  <div class="tarjeta lima" style="text-align:center"><div style="font-size:2.2rem;font-weight:700;color:var(--verde)">1</div><p class="small">gestor receptor</p></div>
-  <div class="tarjeta lima" style="text-align:center"><div style="font-size:2.2rem;font-weight:700;color:var(--verde)">8</div><p class="small">semanas, con línea de base previa</p></div>
- </div>
- <p class="small muted" style="margin-top:10px">La distribución de las semanas varía entre documentos (ver pendientes). Al final se decide seguir, ajustar o replantear.</p>
+
+<section class="contenedor cabeza-pagina">
+  <span class="estado">Basado en el brief definitivo · noviembre 2026</span>
+  <h1 style="margin-top:14px">El proyecto ARCO</h1>
+  <p class="lead">ARCO, Acelerador de Reciclaje Colaborativo en Origen, es un proyecto «puente» de innovación pública para acelerar la circularidad en la gestión de residuos urbanos de Montevideo, centrado en comunidades edilicias.</p>
+  <nav class="ancla-nav" aria-label="En esta página">
+    <a href="#desafio">Desafío</a><a href="#fundamentacion">Fundamentación</a><a href="#innovacion">Innovación</a><a href="#objetivos">Objetivos e indicadores</a><a href="#actores">Actores</a><a href="#cronograma">Cronograma</a><a href="#presupuesto">Presupuesto</a><a href="#alianzas">Alianzas</a><a href="#versiones">Cambios entre versiones</a>
+  </nav>
 </section>
-<section class="seccion blanca"><div class="contenedor">
- <h2>Recorrido del material</h2>
- <p class="muted">Cada estado se prueba con su propia evidencia. Retirar no equivale a recibir, y recibir no acredita que el material se haya valorizado.</p>
- <ol class="circuito" aria-label="Estados del material">
-  <li class="doc"><b>Depositado</b><span>Peso o volumen registrado en el edificio.</span></li>
-  <li class="doc"><b>Retirado</b><span>Constancia de retiro con fecha y cantidad.</span></li>
-  <li class="doc"><b>Recibido</b><span>Comprobante de ingreso del gestor.</span></li>
-  <li class="pend"><b>Clasificado</b><span>Material aceptado y rechazado, según informe del gestor.</span></li>
-  <li class="pend"><b>Valorizado</b><span>Documento de destino o venta. Depende del gestor.</span></li>
- </ol>
- <p class="small muted" style="margin-top:10px">Borde continuo: estados que el diseño del piloto cubre directamente. Borde punteado: dependen de la información que el gestor pueda aportar.</p>
-</div></section>
-<section class="seccion"><div class="contenedor">
- <h2>Actores y roles previstos</h2>
- <div class="grilla g3">
-  <div class="tarjeta"><h3>Residentes</h3><p class="small">Separan el material elegido y lo depositan según reglas acordadas.</p></div>
-  <div class="tarjeta"><h3>Referente del edificio</h3><p class="small">Coordina, registra incidencias y comparte el resumen semanal.</p></div>
-  <div class="tarjeta"><h3>Administración</h3><p class="small">Autoriza el espacio común y las reglas.</p></div>
-  <div class="tarjeta"><h3>Recolector</h3><p class="small">Retira con la frecuencia acordada y deja constancia.</p></div>
-  <div class="tarjeta"><h3>Gestor o cooperativa</h3><p class="small">Recibe, pesa, clasifica y emite comprobantes.</p></div>
-  <div class="tarjeta"><h3>Intendencia de Montevideo</h3><p class="small">Actor institucional con el que alinear el piloto. No hay acuerdo documentado.</p></div>
- </div>
- <p class="small muted" style="margin-top:12px">A la fecha de los documentos ningún actor externo había asumido compromisos. El edificio, el material y el gestor siguen sin definir.</p>
-</div></section>
-<section class="seccion blanca"><div class="contenedor">
- <h2>Qué incluye y qué no</h2>
- <div class="grilla g2">
-  <div class="tarjeta lima"><h3>Incluye</h3><p class="small">Estación compacta en un espacio común, señalética, balanza, formularios, planilla, comprobantes del gestor y devolución semanal al edificio.</p></div>
-  <div class="tarjeta"><h3>No incluye</h3><p class="small">Aplicación propia, sensores, reconocimiento por imagen, puntos o premios, más de un edificio o afirmaciones de impacto a escala ciudad.</p></div>
- </div>
-</div></section>
-<section class="seccion"><div class="contenedor">
- <h2>Pendiente de confirmación</h2>
- <p class="muted">Diferencias entre documentos que este portal no puede resolver. Los archivos originales no se modificaron.</p>
- <div class="tabla-wrap"><table class="datos"><thead><tr><th>Tema</th><th>Brief y proceso</th><th>Otros materiales</th></tr></thead><tbody><tr><td><strong>Duración de la operación</strong></td><td>Brief (agosto y octubre) y proceso simplificado: 2 semanas de línea de base y 6 de operación.</td><td>Presentación Demo Day, lámina 10: «2 semanas de línea de base + 8 de operación»; lámina 16: semanas 1–2, 3–8 y cierre en la 9.</td></tr><tr><td><strong>Presupuesto</strong></td><td>Brief revisado: estimación de $ 122.000 UYU para las etapas 0 a 5, sujeta a cotización.</td><td>Presentación Demo Day: «Total estimado: USD 890 – 1330» para el piloto de 8 semanas con personal operativo ARCO.</td></tr><tr><td><strong>Meta del piloto</strong></td><td>Brief revisado: umbrales de éxito a definir antes de la línea de base.</td><td>Presentación Demo Day: aumentar al menos 20 % el material efectivamente valorizado frente a la línea de base.</td></tr><tr><td><strong>Gestor y plantas</strong></td><td>Brief revisado: gestor no identificado ni comprometido.</td><td>Presentación Demo Day: la clasificación y la valorización «serán confirmadas» por cuatro plantas (La Paloma, Durán, Géminis y Burgues). No hay acuerdo documentado.</td></tr><tr><td><strong>Envío del resumen</strong></td><td>Proceso simplificado: un script cruza formularios y dispara WhatsApp.</td><td>Demostración conceptual: el referente copia el resumen y lo envía a mano. Sin integración automática.</td></tr><tr><td><strong>Pregunta de diseño</strong></td><td>Brief: cómo facilitar que las personas en edificios separen y sostengan el hábito, con evidencia del destino.</td><td>Demo Day: cómo mejorar el hábito de separar en hogares de Montevideo. Las notas de ideación usan otra formulación.</td></tr><tr><td><strong>Cifras de contexto</strong></td><td>Brief revisado: varias cifras quedaron pendientes de verificación; usa el Plan Departamental de Residuos como fuente.</td><td>Presentación Demo Day: cifras como «menos del 5 %», «350.000 ton», «51 %», «USD 21,9 millones» o «+520 comunidades» sin referencia completa.</td></tr></tbody></table></div>
-</div></section>
+
+<section class="seccion blanca" id="desafio">
+  <div class="contenedor grilla g2" style="align-items:start">
+    <div>
+      <h2>Desafío y problemática local</h2>
+      <p>Un 51 % de los montevideanos se declara insatisfecho con la recolección de residuos de la Intendencia de Montevideo (Equipos Consultores, 2026), que aparece como la principal preocupación de la capital (Cifra, 2025).</p>
+      <p>Al final del ciclo, los informes oficiales sobre las cuatro plantas de clasificación (La Paloma, Durán, Géminis y Burgues) muestran que no más de un 43 % del material recibido como reciclable logra clasificarse, enfardarse y venderse a la industria. El resto termina en el Sitio de Disposición Final Felipe Cardoso como basura común.</p>
+      <p>ARCO apunta a los Objetivos de Desarrollo Sostenible 11 y 12, en particular las metas 11.6, 12.5 y 12.8.</p>
+    </div>
+    <div>
+      <h3>De una cadena lineal…</h3>
+      <ul class="cadena"><li>Generar</li><li>Recolectar</li><li class="mal">Enterrar</li></ul>
+      <h3 style="margin-top:22px">…a una circular</h3>
+      <ul class="cadena circular"><li>Reducir</li><li>Reutilizar</li><li>Separar</li><li>Valorizar</li><li>Disponer solo el rechazo</li></ul>
+      <p class="small muted" style="margin-top:18px">Felipe Cardoso ocupa unas 77 hectáreas, equivalentes a 26 huellas del Estadio Centenario, y su relleno alcanza entre 20 y 40 metros de altura.</p>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" id="fundamentacion">
+  <div class="contenedor">
+    <h2>Fundamentación y antecedentes</h2>
+    <div class="grilla g3">
+      <div class="tarjeta"><span class="kicker">En el hogar</span><h3>El hábito se interrumpe</h3><p class="small">En la encuesta propia a 111 hogares, el 23,4 % dice separar siempre y el 45,9 % dejó de separar alguna vez. Las barreras más citadas: falta de espacio, la creencia de que luego «se mezcla todo», un sistema del edificio que no facilita y puntos de entrega incómodos. <a href="investigacion.html">Ver la encuesta</a>.</p></div>
+      <div class="tarjeta"><span class="kicker">En la cadena</span><h3>Contaminación desde el origen</h3><p class="small">Las plantas cooperativas reportan material mezclado con orgánicos o húmedo y materiales no comercializables. Los contenedores públicos generan desbordes y sobrecostos de limpieza (IM, Dirección de Desarrollo Ambiental, 2025).</p></div>
+      <div class="tarjeta"><span class="kicker">En la política pública</span><h3>Hogares Sustentables</h3><p class="small">El programa de la IM, lanzado en 2025, traslada la gestión del contenedor público a soluciones intradomiciliarias e intraprediales. ARCO se plantea como una capa complementaria de comportamiento, coordinación y trazabilidad.</p></div>
+    </div>
+    <p class="aviso" style="margin-top:24px">El Plan Departamental de Limpieza y Gestión de Residuos 2026–2027 reconoce que la identificación de vehículos y la codificación de ingresos todavía son manuales. Por eso ARCO busca producir, desde el inicio, datos compatibles con una futura cadena municipal de seguimiento circular.</p>
+  </div>
+</section>
+
+<section class="seccion blanca" id="innovacion">
+  <div class="contenedor">
+    <h2>Seis vectores de innovación</h2>
+    <div class="grilla g3">
+      <div class="tarjeta"><span class="kicker">1</span><h3>Microgobernanza</h3><p class="small">Un edificio como unidad de gobierno local del circuito.</p></div>
+      <div class="tarjeta"><span class="kicker">2</span><h3>Roles colaborativos</h3><p class="small">Roles acordados entre actores, coordinados por WhatsApp.</p></div>
+      <div class="tarjeta"><span class="kicker">3</span><h3>Trazabilidad verificable</h3><p class="small">Estados con evidencia: pesaje y seguimiento de la recepción.</p></div>
+      <div class="tarjeta"><span class="kicker">4</span><h3>Integración con la política pública</h3><p class="small">Articulación con el programa Hogares Sustentables.</p></div>
+      <div class="tarjeta"><span class="kicker">5</span><h3>Kit modular replicable</h3><p class="small">Estación de bajo costo adaptable a cada edificio.</p></div>
+      <div class="tarjeta"><span class="kicker">6</span><h3>Visión de largo plazo</h3><p class="small">Hacia el «Vertedero Cero», con referencias como Fresh Kills (Nueva York) y Moravia (Medellín).</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" id="objetivos">
+  <div class="contenedor">
+    <h2>Objetivos e indicadores</h2>
+    <p class="lead">Objetivo general de ARCO 1.0: diseñar, implementar y evaluar en 8 semanas un servicio de bajo costo para mejorar la separación en origen y la trazabilidad de un material en un edificio típico de Montevideo (mínimo 20 apartamentos), generando evidencia para decidir su ajuste, digitalización o escala.</p>
+    <h3>Estados de trazabilidad</h3>
+    <div class="tabla-wrap"><table class="datos">
+      <thead><tr><th>Estado</th><th>Evidencia</th><th>Confirma</th><th>No confirma</th></tr></thead>
+      <tbody>
+        <tr><td><b>1. Depositado</b></td><td>Material separado en contenedores (sticker)</td><td>La separación</td><td>Su reciclaje</td></tr>
+        <tr><td><b>2. Retirado</b></td><td>Pesaje y constancia de retiro</td><td>La recolección</td><td>Que fue aceptado en planta</td></tr>
+        <tr><td><b>3. Recibido</b></td><td>Comprobante de ingreso a planta</td><td>La recepción en planta</td><td>Que fue valorizado</td></tr>
+        <tr><td><b>4. Clasificado</b></td><td>Aceptado o rechazado</td><td>Su clasificación en planta</td><td>Su arribo a destino final</td></tr>
+        <tr><td><b>5. Valorizado</b></td><td>Venta, destino o proceso</td><td>La revalorización</td><td>Su impacto real, sin evaluación técnica</td></tr>
+      </tbody>
+    </table></div>
+    <h3 style="margin-top:28px">Indicadores de monitoreo</h3>
+    <div class="tabla-wrap"><table class="datos">
+      <thead><tr><th>Destino</th><th>Qué se mide</th><th>Meta y referencia</th></tr></thead>
+      <tbody>
+        <tr><td>Plantas de reciclaje</td><td>Tasa de material reciclable valorizado desde el edificio (% sobre kg)</td><td>Objetivo mínimo: +20 %. Línea de base: a determinar por ARCO.</td></tr>
+        <tr><td>Ciudad (a partir de 2028)</td><td>Tasa urbana general de reciclables (% sobre toneladas)</td><td>Objetivo mínimo: 15 %. Referencia actual: alrededor del 5 %.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="small muted" style="margin-top:10px">Son metas propuestas. El piloto no se ejecutó y no hay resultados medidos.</p>
+  </div>
+</section>
+
+<section class="seccion blanca" id="actores">
+  <div class="contenedor">
+    <h2>Ocho actores, un circuito</h2>
+    <p class="muted">El piloto pone a prueba el desempeño colaborativo de una cadena completa alrededor de un edificio.</p>
+    <div class="actores">
+      <div class="actor"><b>1. Residentes</b><i>Usuarios / generadores</i><span>Separan el material elegido y lo depositan según las reglas ARCO.</span></div>
+      <div class="actor"><b>2. Referente ARCO del edificio</b><i>Facilitador</i><span>Coordina, comunica, registra incidencias y mantiene activo el circuito.</span></div>
+      <div class="actor"><b>3. Administración o comisión</b><i>Decisor</i><span>Autoriza infraestructura y reglas, y coordina con los demás actores.</span></div>
+      <div class="actor"><b>4. Personal del edificio</b><i>Ejecutor operativo</i><span>Facilita el retiro interno y evita que lo separado vuelva a mezclarse.</span></div>
+      <div class="actor"><b>5. Recolector u operador</b><i>Eslabón logístico</i><span>Retira con la frecuencia acordada y genera evidencia del retiro.</span></div>
+      <div class="actor"><b>6. Gestor o planta</b><i>Validador de calidad</i><span>Recibe, pesa, clasifica y registra aceptado o rechazado con el ID ARCO.</span></div>
+      <div class="actor"><b>7. IM, área competente</b><i>Articulador institucional</i><span>Alinea el piloto con el sistema municipal y evalúa su escalamiento.</span></div>
+      <div class="actor"><b>8. Equipo ARCO / UM–CAF</b><i>Diseñador y evaluador</i><span>Diseña el servicio, levanta la línea de base, monitorea y produce el kit replicable.</span></div>
+    </div>
+    <h3 style="margin-top:30px">Dinámica del servicio</h3>
+    <ol>
+      <li><b>Sensibilización y kick-off:</b> kits informativos, cartelería, contenedores en planta baja y medición de línea de base.</li>
+      <li><b>Rutina de depósito:</b> los vecinos colocan el material separado en hasta tres contenedores comunes, preferentemente con sticker por apartamento.</li>
+      <li><b>Visita de operación, dos veces por semana:</b> el operador clasifica, pesa por apartamento, registra los kilogramos y controla la calidad.</li>
+      <li><b>Reporte:</b> al cierre, informe final de impacto a la administración, con kilogramos por apartamento y del edificio.</li>
+    </ol>
+    <p class="aviso discreto">El brief identifica al Edificio Cardinal (Pocitos, dos bloques con 40 apartamentos) como la primera comunidad edilicia interesada para iniciar el prototipo. A la fecha de este sitio, el piloto no comenzó y no hay compromisos formales documentados de gestores, plantas ni de la IM.</p>
+  </div>
+</section>
+
+<section class="seccion" id="cronograma">
+  <div class="contenedor">
+    <h2>Cronograma propuesto</h2>
+    <p class="muted">Escalar solo después de validar la operación, la calidad, el costo y la gobernanza del primer edificio. Las etapas posteriores a ARCO 1.0 son proyecciones.</p>
+    <div class="tabla-wrap"><table class="datos">
+      <thead><tr><th>Semanas</th><th>Etapa</th><th>Acciones</th></tr></thead>
+      <tbody>
+        <tr><td>1–2</td><td><b>ARCO 1.0</b> · 1 edificio (piloto)</td><td>Kick-off: validar comportamiento testigo, instalar el kit e iniciar la trazabilidad para la línea de base. Zona Pocitos.</td></tr>
+        <tr><td>3–8</td><td>1 edificio</td><td>Operación semanal: medición, retiro, recepción, incidentes y devolución. Cartelera y WhatsApp.</td></tr>
+        <tr><td>9</td><td>1 edificio</td><td>Cierre de ARCO 1.0: evaluación de resultados y mejora continua.</td></tr>
+        <tr><td>10–19</td><td><b>ARCO 2.0</b> · +5 edificios</td><td>Probar replicabilidad y costo unitario en Cordón, Centro y Punta Carretas. Al cierre, evaluar app, sensores, incentivos o software, condicionados a la evidencia y viabilidad.</td></tr>
+        <tr><td>20–29</td><td><b>ARCO 3.0</b> · +25 edificios</td><td>Medir toneladas recicladas y desviadas; sumar barrios, cooperativas y vivienda promovida.</td></tr>
+        <tr><td>30–40</td><td><b>ARCO 4.0</b> · +100 edificios</td><td>Escala urbana madura con datos centralizados, automatizados y optimizados.</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<section class="seccion blanca" id="presupuesto">
+  <div class="contenedor">
+    <h2>Presupuesto estimado del prototipo</h2>
+    <div class="tabla-wrap"><table class="datos">
+      <thead><tr><th>Rubro</th><th>Costo aproximado</th><th>Descripción</th></tr></thead>
+      <tbody>
+        <tr><td>1. Balanza y equipamiento</td><td>USD 160–240</td><td>Balanza portátil de plataforma (30–50 kg) y 3 contenedores de acopio para el área común, a coordinar con la IM.</td></tr>
+        <tr><td>2. Identificación y control</td><td>USD 30–40</td><td>Stickers preimpresos por apartamento y planillas de control operativo.</td></tr>
+        <tr><td>3. Sensibilización y kick-off</td><td>USD 100–150</td><td>Kits informativos puerta a puerta y taller breve de inicio con vecinos.</td></tr>
+        <tr><td>4. Servicio operativo ARCO (8 semanas)</td><td>USD 480–720</td><td>16 visitas de un operador para pesaje, rotulado, registro y acondicionamiento.</td></tr>
+        <tr><td>5. Logística de retiro (8 semanas)</td><td>USD 120–180</td><td>Coordinación, acopio final y entrega a gestores o clasificadores autorizados.</td></tr>
+        <tr><td><b>Total estimado (MVP)</b></td><td><b>USD 890–1.330</b></td><td>Piloto de 8 semanas con personal operativo ARCO.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="small muted" style="margin-top:10px">No incluye vehículos (se prevé usar flotas existentes de algún actor) ni tecnologías propias de ARCO 2.0. Es una estimación: no hay financiamiento asignado.</p>
+  </div>
+</section>
+
+<section class="seccion" id="alianzas">
+  <div class="contenedor">
+    <h2>Recursos y posibles alianzas</h2>
+    <p class="muted">Roles propuestos. Ninguno implica un compromiso asumido por la institución mencionada.</p>
+    <div class="tabla-wrap"><table class="datos">
+      <thead><tr><th>Actor o alianza</th><th>Rol propuesto en ARCO</th></tr></thead>
+      <tbody>
+        <tr><td>Intendencia de Montevideo, áreas de limpieza y gestión de residuos</td><td>Articulación institucional, integración con el Plan Departamental y acceso a información operativa.</td></tr>
+        <tr><td>Hogares Sustentables</td><td>Complementariedad, evitando duplicar infraestructura o programas.</td></tr>
+        <tr><td>Administración y comisión del edificio</td><td>Autorización, reglas internas y gobernanza.</td></tr>
+        <tr><td>Recolector u operador</td><td>Retiro diferenciado y registro de cada operación.</td></tr>
+        <tr><td>Planta de clasificación o gestor</td><td>Pesaje, control de calidad, clasificación y validación del destino.</td></tr>
+        <tr><td>Cooperativas y organizaciones de clasificadores</td><td>Participación en la cadena de valorización e inclusión sociolaboral.</td></tr>
+        <tr><td>CEMPRE y organizaciones especializadas</td><td>Conocimiento técnico, metodologías y eventual apoyo a la medición.</td></tr>
+        <tr><td>Universidad de Montevideo, equipo académico</td><td>Diseño metodológico, evaluación del piloto y documentación del modelo.</td></tr>
+        <tr><td>CAF</td><td>Marco de innovación, acompañamiento metodológico, evaluación de escalabilidad y financiación.</td></tr>
+        <tr><td>Empresas de reciclaje y gestores</td><td>Recepción y valorización efectiva de las corrientes recuperadas.</td></tr>
+        <tr><td>Vecinos y referentes comunitarios</td><td>Co-diseño, experimentación y retroalimentación.</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<section class="seccion blanca" id="versiones">
+  <div class="contenedor">
+    <h2>Cómo cambió la propuesta entre versiones</h2>
+    <p class="muted">Las versiones anteriores del sitio señalaban diferencias entre documentos. El brief definitivo resuelve la mayoría.</p>
+    <div class="tabla-wrap"><table class="datos">
+      <thead><tr><th>Tema</th><th>Versiones anteriores</th><th>Brief definitivo (23/11/2026)</th></tr></thead>
+      <tbody>
+        <tr><td>Duración</td><td>2 + 6 semanas (brief de agosto y octubre) frente a 2 + 8 (Demo Day)</td><td>Semanas 1–2 de kick-off y línea de base, 3–8 de operación, cierre en la 9.</td></tr>
+        <tr><td>Presupuesto</td><td>$ 122.000 UYU (octubre) frente a USD 890–1.330 (Demo Day)</td><td>USD 890–1.330, con desglose por rubro.</td></tr>
+        <tr><td>Meta</td><td>Umbrales a definir (octubre) frente a +20 % (Demo Day)</td><td>+20 % de material valorizado frente a la línea de base.</td></tr>
+        <tr><td>Edificio</td><td>Sin definir</td><td>Edificio Cardinal (Pocitos), primera comunidad interesada.</td></tr>
+        <tr><td>Gestor y plantas</td><td>Sin gestor comprometido</td><td>Las cuatro plantas aparecen como contexto. Sigue sin acuerdo documentado con un gestor.</td></tr>
+        <tr><td>Envío del resumen</td><td>Automático por script (proceso simplificado) frente a manual (demo)</td><td>Coordinación por WhatsApp; la demostración muestra un envío manual. Sin integración automática.</td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin-top:16px"><a href="documentos.html">Ver documentos vigentes e históricos →</a></p>
+  </div>
+</section>
+
 </main>
 <footer class="pie-sitio">
-  <div class="contenedor fila">
-    <div>
-      <p><span class="estado">Versión inicial · En evolución</span></p>
-      <p>Este repositorio reúne el proceso y los materiales de ARCO y queda preparado para incorporar progresivamente el código, las pruebas y la documentación técnica del MVP. El video muestra una demostración conceptual; la herramienta operativa aún no está implementada.</p>
+  <div class="contenedor">
+    <div class="columnas">
+      <div>
+        <img class="logo-pie" src="assets/img/logo-arco.png" alt="ARCO" width="58" height="42" loading="lazy">
+        <p><strong>ARCO · Acelerador de Reciclaje Colaborativo en Origen.</strong> Proyecto de equipo del Diplomado en Gobernabilidad e Innovación Pública, CAF – Universidad de Montevideo, 2026.</p>
+        <p>El piloto es una propuesta: no se ha ejecutado. La demostración del MVP usa datos simulados.</p>
+      </div>
+      <div>
+        <h2>Sitio</h2>
+        <ul>
+          <li><a href="https://arco-um-caf.github.io/">arco-um-caf.github.io</a></li>
+          <li><a href="propuesta.html">El proyecto</a></li>
+          <li><a href="mvp.html">MVP</a></li>
+          <li><a href="desarrollo.html">Evolución</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Recursos</h2>
+        <ul>
+          <li><a href="index.html#videos">Videos</a></li>
+          <li><a href="assets/video/arco-presentacion.mp4" download>Presentación (MP4)</a></li>
+          <li><a href="assets/video/arco-demo-mvp.mp4" download>Demo del MVP (MP4)</a></li>
+          <li><a href="documentos/2026-11-23_brief-arco-definitivo.pdf">Brief definitivo (PDF)</a></li>
+          <li><a href="documentos.html">Documentación</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Código</h2>
+        <ul>
+          <li><a href="https://github.com/arco-um-caf/arco-um-caf.github.io" rel="noopener">Repositorio en GitHub</a></li>
+          <li><a href="https://github.com/arco-um-caf/arco-um-caf.github.io#readme" rel="noopener">README</a></li>
+          <li><a href="https://github.com/arco-um-caf/arco-um-caf.github.io/releases" rel="noopener">Versiones publicadas</a></li>
+          <li><a href="https://github.com/arco-um-caf/arco-um-caf.github.io/issues" rel="noopener">Proponer mejoras</a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <p><strong>ARCO</strong> es un proyecto de equipo realizado en el marco del Diplomado en Gobernabilidad e Innovación Pública, CAF – Universidad de Montevideo, 2026.</p>
-      <p>Las cifras de la encuesta son exploratorias. Las piezas conceptuales y la demostración con datos simulados se identifican como tales en cada sección.</p>
-    </div>
+    <p class="base">Versión 2.0 del sitio web · Entrega final · Noviembre 2026. La mención de CAF y de la Universidad de Montevideo indica el contexto académico del proyecto y no implica un aval institucional adicional. Contenidos sin licencia de reutilización asignada.</p>
   </div>
 </footer>
 <script src="assets/js/sitio.js"></script>
